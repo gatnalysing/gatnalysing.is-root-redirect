@@ -1,0 +1,39 @@
+.hidden {
+    display: none; /* Hides the element and it won't take up any space */
+}
+
+body {
+    margin: 0;
+    padding: 20px; /* Adds padding to the body to leave space on the sides */
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: calc(100% - 40px); /* Adjusts container width to allow for body padding */
+    margin: 20px auto; /* Centers the container and adds vertical spacing */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container img {
+    width: 100%; /* Ensures the image stretches to fill the container */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes bottom margin/spacing typical of inline elements */
+    border: 10px solid black; /* Maintains the border around the image */
+    box-sizing: border-box; /* Includes border in the element's total width and height */
+}
+
+#colorSlider {
+    width: 100%; /* Stretches the slider to match the container's width */
+    margin: 20px 0; /* Adds vertical spacing around the slider */
+}
+
+#submitBtn {
+    display: block;
+    margin: 20px auto; /* Centers the button below the slider */
+}
+
+#colorValue {
+    margin-top: 20px; /* Adds space above the hex color value display */
+}
